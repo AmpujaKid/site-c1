@@ -1,0 +1,60 @@
+
+<script>
+function filter (e) {  // Only accept numbers and letters and shit, replace spaces.
+    var regex = new RegExp("^[a-zA-Z0-9-/\W/g]+$");
+    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (regex.test(str)) {
+        return true;
+    }
+
+    e.preventDefault();
+    return false;
+}
+</script>
+
+<html>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<center>
+	<title>Leetgrail</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<center>
+<div class="container-top">
+	<h1> Leet<span>grail</span> </h1>
+</div>
+	
+<div class="container-bottom">
+	<a href="login.html"> Login </a>
+</div>
+
+<div class="container-top">
+	<b> Registration </b>
+</div>
+<div class="container-bottom" autocomplete="off">
+	<form action="index.html" method="post">
+		<fieldset>
+			<legend>You need to enter a username</legend>
+			<input class="form" type="text" name="username" placeholder="Username" id="username" maxlength="30" onkeypress="clsAlphaNoOnly(event)" onpaste="return false;" required>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>You need to enter a password</legend>
+			<input class="form" type="password" name="password" placeholder="Password" maxlength="30" id="password" required>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>You need to enter a valid invite</legend>
+			<input class="form" type="text" name="invitecode" placeholder="Invite" maxlength="30" id="invitecode" required>
+		</fieldset>
+		<br>
+		<br>
+		<input class="form" type="submit" value="Register" name="register">
+	</form>
+	</div>
+
+</body>
+
+</html>
