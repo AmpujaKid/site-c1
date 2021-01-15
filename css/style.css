@@ -53,8 +53,7 @@ span {
 img{
 	width:200px;
 	height:200px;
-	border:2px solid #ddd;
-	display: none;
+	display: block;
 }
 
 .show {
@@ -456,17 +455,6 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }  
-
-a:hover img { 
-	display: block; 
-	position: absolute;
-    left: 150px; 
-    top: 10px; 
-	max-height: 80%;
-	border-color: #cccccc;
-	border: solid 1px #cccccc;
-}
-
 .scroll {
 	max-height: 90px;
 	overflow: auto;
