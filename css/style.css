@@ -34,12 +34,11 @@ span {
 
 #link {
 	color: #cc55aa;
-	text-decoration: none !important;
 }
 
 #link:hover {
 	color: #f4a4d3;
-	text-decoration: bold;
+	text-decoration: italic;
 
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
