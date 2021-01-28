@@ -51,8 +51,14 @@ span {
 }
 
 img{
-	width:200px;
-	height:200px;
+	width:100px;
+	height:100px;
+	display: inline;
+}
+
+#img-alt {
+	width:175px;
+	height:175px;
 	display: inline;
 }
 
@@ -84,9 +90,9 @@ legend {
 }
 
 fieldset {
-	padding: 0 12px 4px 12px;
+	padding: 0px 12px 4px 12px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px 2px 2px 1px;
 	border-color: #606060;
 	overflow: auto;
 }
