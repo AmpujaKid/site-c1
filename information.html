@@ -7,7 +7,11 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>leetgrail</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico">
 
 	</head>
 <body>
@@ -28,11 +32,39 @@
         <div class="col">
             <h2>INFO:</h2>
 			<a href="https://dontddos.com" target="_blank">Emporium</a>
-			<a href="" target="_blank"></a>
         </div>
 
         <div class="col">
-            <p></p>
+            <div class="terminal-window">
+  <header>
+    <div class="button red"></div>
+    <div class="button yellow"></div>
+    <div class="button green"></div>
+  </header>
+  <section class="terminal" style="--char-width:6.60938; --terminal-height:410; --terminal-x:10; --terminal-y:164; --terminal-scroll:0;">
+    <script>
+    $('.terminal').terminal({
+        hello: function(what) {
+            this.echo('Hello, ' + what +
+                      '. Welcome to this terminal.');
+        },
+    
+        help: function(what) {
+            this.echo('This is a help page!\nStan Gender for access to the AGC API\n\n If you are Gender then thank you daddy for very nice console!!!');
+        }
+		
+		//whoami: function(what) {
+        //    this.echo('A LOSER >:)!!!');
+        //}
+    
+    }, {
+        checkArity: false,
+        completion: true,
+        greetings: 'I LOVE UNQUIETERPIG'
+    });
+    </script>
+  </section>
+</div>
 
 
         </div>

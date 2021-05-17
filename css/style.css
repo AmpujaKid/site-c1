@@ -147,6 +147,152 @@ div.alert-success {
 	background-color: darkgreen;
 }
 
+.terminal-window {
+  margin: auto;
+  width: 450px;
+  height: 230px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 15px;
+}
+
+.terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  float: right;
+  border-radius: 8px;
+}
+
+.terminal-window header .button.green {
+  background: #3BB662;
+}
+
+.terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+
+.terminal-window header .button.red {
+  background: #E75448;
+}
+
+.terminal-window header .text {
+  display: inline-block;
+  font-family: letter-gothic-std, monospace;
+  color: #60646b;
+  margin: 4px 0 0 220px;
+  text-align: center;
+}  
+
+.terminal-window section.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: rgba(18, 20, 22, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+
+@-webkit-keyframes terminal-smooth {
+    0%, 100% {
+        left: 0;
+        color: #fff;
+        color: var(--original-color, #aaa);
+        background-color: #000;
+        background-color: var(--background, #000);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    50% {
+        left: 0;
+        color: #000;
+        background: #fff;
+        -webkit-box-shadow: 0 0 5px var(--color, #aaa);
+        box-shadow: 0 0 5px var(--color, #aaa);
+        border: none;
+        padding: 0;
+        margin: 0;
+        /* border-bottom: 2px solid transparent; */
+    }
+}
+@-moz-keyframes terminal-smooth {
+    0%, 100% {
+        left: 0;
+        color: #fff;
+        color: var(--original-color, #aaa);
+        background-color: #000;
+        background-color: var(--background, #000);
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    50% {
+        left: 0;
+        color: #000;
+        background: #fff;
+        -mox-box-shadow: 0 0 5px var(--color, #aaa);
+        box-shadow: 0 0 5px var(--color, #aaa);
+        border: none;
+        padding: 0;
+        margin: 0;
+        /* border-bottom: 2px solid transparent; */
+    }
+}
+@keyframes terminal-smooth {
+    0%, 100% {
+        left: 0;
+        color: #fff;
+        color: var(--original-color, #aaa);
+        background-color: #000;
+        background-color: var(--background, #000);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    50% {
+        left: 0;
+        color: #000;
+        background: #fff;
+        -webkit-box-shadow: 0 0 5px var(--color, #aaa);
+        box-shadow: 0 0 5px var(--color, #aaa);
+        border: none;
+        padding: 0;
+        margin: 0;
+        /* border-bottom: 2px solid transparent; */
+    }
+}
+
+.terminal {
+  --color: rgba(255, 255, 255, 0.99);
+  --animation: terminal-smooth;
+  --background: none;
+  text-shadow: 0 0 3px rgba(0,100,0,0.5);
+}
+
+.terminal-data { display: none; }
+.terminal-window .gray { color: gray; }
+.terminal-window .green { color: green;}
+
+
 /* Mobile */
 @media (max-width: 768px) {
 	td {
