@@ -79,27 +79,22 @@ h1 {
 }
 
 /* THEGOODS */
-#fancyboi::before {
-	content: "$ ";
-}
 
 @media (prefers-reduced-motion: no-preference) {
 	@keyframes flash {
 		50% { opacity: 0; }
 	}
 	@keyframes reveal {
-		from { width: 2em; } /* Width of ::before */
-		  to { width: 100%; }
+		0%   {left: 0%;}
+		50%  {left: 100%;}
+		100% {left: 0%;}
 	}
 	#fancyboi {
-		overflow: hidden;
+		position: absolute;
+		margin: auto;
 		white-space: nowrap;
-		animation: reveal 4s linear;
-		text-overflow: "█";
-	}
-	#fancyboi::after {
-		content: "█";
-		animation: flash 0.5s step-end infinite;
+		animation: reveal 16s linear;
+		animation-iteration-count: infinite;
 	}
 }
 /* SDOOGEHT */
