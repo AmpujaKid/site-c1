@@ -86,7 +86,7 @@ h1 {
 	}
 	@keyframes reveal {
 		0%   {left: 0%;}
-		50%  {left: 100%;}
+		50%  {left: 80%;}
 		100% {left: 0%;}
 	}
 	#fancyboi {
